@@ -4,7 +4,7 @@ from email.mime.multipart import MIMEMultipart
 
 # Sender and receiver details
 sender_email = "elisemcyo@gmail.com"
-receiver_email = "benjaminbuntu4@gmail.com"
+receiver_email = "keibybonheur@gmail.com"
 password = "mmvx qrxa edmf bkez"  # Use the app password here
 
 # Email content
