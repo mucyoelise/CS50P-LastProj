@@ -44,7 +44,8 @@ The software is executed using the command-line interface (CLI) provided by the 
 
 ### Libraries Used
 
-This project utilizes several Python libraries to retrieve weather data and manage the application. The following libraries are used:
+This project utilizes several Python libraries to manage the application (in general) and send the findings (Zodiac sign of the user) through SMTP when requested by the user. 
+The following libraries are used:
 
 - **`configparser`**: Used to read the API key from a configuration file.
 - **`argparse`**: Used to parse command-line arguments provided by the user.
