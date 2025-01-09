@@ -1,3 +1,5 @@
+from dotenv import load_dotenv
+import os
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
@@ -31,8 +33,7 @@ class ZodiacSign:
                 Day range: "01-lastDayOfMonth"
         ...Note that all the parts (year, month, and day) should be numbers...
                 \n''')
-            exit(10)
-    
+            raise()
     def __repr__(self):
         return f'\nYour provided DoB is a valid format: "{self._dob}".\nWanna get your ZodiacSign use getZodSign() module.\n'
     
@@ -91,7 +92,8 @@ class ZodiacSign:
         if input('Your response (yes/no): ').lower() in ['y','yes']:
             # Sender and receiver details
             sender_email = "elisemcyo@gmail.com"
-            password = "mmvx qrxa edmf bkez"  # Use the app password here
+            load_dotenv()
+            password = os.getenv("EMAIL_APP_PASSWORD")  # Use the app password here
 
             while True:     
                 if match := re.search(pattern=r"^([a-zA-Z0-9._]+@gmail.com)$", string = input("Please enter your gmail account here: ").strip().lower()):
@@ -103,9 +105,9 @@ class ZodiacSign:
             # Email content
             subject = f"You are {cls.user_sign.upper()}"
             body = f'''
-Hello {cls.user_sign}! The following are your personalities according to your DateofBirth ({cls.user_dob}):
+Hello {cls.user_sign}! The following are your personalities according to your Date of Birth ({cls.user_dob}):\n
 {cls.user_pers}
-We really thank you and appreciate your support of using our first App. (ZodiacSignApp)🙏
+We really thank you and appreciate your support for using ZodiacSignApp🙏
 
             ~~~~~~~~~~~~~~~ All rights reserved by ZodiacSignApp owner. ~~~~~~~~~~~~~~~~~~
             '''
@@ -122,8 +124,8 @@ We really thank you and appreciate your support of using our first App. (ZodiacS
                     server.starttls()  # Start TLS encryption
                     server.login(sender_email, password)  # Login to your Gmail account
                     server.sendmail(sender_email, receiver_email, message.as_string())  # Send email
-                    print("Email sent successfully!")
-                    return "\n~~~~~~~~~~~~~~~ Thank you for using our App (ZodiacSign)🙏 ~~~~~~~~~~~~~~~\n"
+                    print("\nEmail sent successfully!")
+                    return "\n~~~~~~~~~~~~~~~ Thank you for using ZodiacSignApp🙏 ~~~~~~~~~~~~~~~\n"
             except Exception as err:
                 return f"Error: {err}"
-        else: return "It's okay! Thank you for using our firstApp (ZodiacSignApp)🙏"
+        else: return "It's okay! Thank you for using ZodiacSignApp🙏"
