@@ -6,6 +6,7 @@ import re
 from datetime import date
 
 class ZodiacSign:
+    user_dob = ''
     user_sign = ''
     user_pers = ''
     def __init__(self, dob):
@@ -20,6 +21,7 @@ class ZodiacSign:
         try:
             if date.fromisoformat(n):
                 self._dob = n
+                ZodiacSign.user_dob = n
         except Exception as err:
             print('\nError:',err)
             print("Usage: input in this format (Year-Month-Day)")
@@ -101,10 +103,9 @@ class ZodiacSign:
             # Email content
             subject = f"You are {cls.user_sign.upper()}"
             body = f'''
-            Hello {cls.user_sign}! The following are your personalities according to your DateofBirth ({cls.dob}):
-
-            {cls.user_pers}
-            We really thank you and appreciate your support of using our first App. (ZodiacSignApp)🙏
+Hello {cls.user_sign}! The following are your personalities according to your DateofBirth ({cls.user_dob}):
+{cls.user_pers}
+We really thank you and appreciate your support of using our first App. (ZodiacSignApp)🙏
 
             ~~~~~~~~~~~~~~~ All rights reserved by ZodiacSignApp owner. ~~~~~~~~~~~~~~~~~~
             '''
@@ -122,7 +123,7 @@ class ZodiacSign:
                     server.login(sender_email, password)  # Login to your Gmail account
                     server.sendmail(sender_email, receiver_email, message.as_string())  # Send email
                     print("Email sent successfully!")
-                    print("\n~~~~~~~~~~~~~~~ Thank you for using our App (ZodiacSign)🙏 ~~~~~~~~~~~~~~~\n")
+                    return "\n~~~~~~~~~~~~~~~ Thank you for using our App (ZodiacSign)🙏 ~~~~~~~~~~~~~~~\n"
             except Exception as err:
                 return f"Error: {err}"
         else: return "It's okay! Thank you for using our firstApp (ZodiacSignApp)🙏"
