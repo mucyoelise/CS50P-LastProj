@@ -85,6 +85,14 @@ api_key=YOUR_API_KEY_HERE
 
 ### Usage
 
+After completing the setup steps, you can use the project.py script to retrieve weather information for a specified city. Use the command-line arguments to customize the request:
+
+python project.py <city>: Fetches current weather information for the given city.
+python project.py <city> -i: Displays temperature in Fahrenheit.
+python project.py <city> -f: Fetches weather forecast for the given city.
+python project.py <city> -if: Displays temperature in Fahrenheit and fetches forecast.
+python project.py <city> -i -f: Displays temperature in Fahrenheit and fetches forecast.
+
 ### Project Structure
 
 The project structure is as follows:
