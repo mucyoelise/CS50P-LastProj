@@ -17,11 +17,13 @@
 
 ## Introduction
 
-This project utilizes the WeatherAPI to fetch weather and temperature information for a specified city. The project includes a command-line interface (CLI) that allows users to input the city name and choose between fetching the current weather or a forecast for a specific date.
+Have you heard zodiac sign before? Well, in the concept of Astrology: a belief system that suggests a relationship between the positions and movements of celestial bodies--like planets, stars and moon--and events on the Earth, including human personalities, behaviors, and life events; zodiac is the part of astrology which believes that a person's personality depends on the position and movements of celestial bodies at the time of their birth. The zodiac is divided into 12 signs, each corresponding to specific dates in the calendar year. These signs are derived from the constellations the sun appears to pass through as the Earth orbits around it.
+
+Want to know more about Astrology [click here](https://docs.google.com/document/d/1wB_t3Df-YiviWwG1Fy9tARbSY0cPbH1h/edit?usp=sharing&ouid=116133234786654777112&rtpof=true&sd=true).
 
 ## What Will Your Software Do?
 
-This software aims to provide users with accurate weather and temperature information for a desired city. It can display both the current weather conditions and a forecast, helping users plan their activities accordingly. The project offers the following features:
+This software aims to provide users with their zodiac sign according to provided date of birth. Moreover, the users should choose if they want to get their personalities based on their zodiac sign as well as to receive them on their emails. Note the user will be required to provide his/her gmail account for the sake of getting this information on his/her email.
 
 - Retrieving and displaying current weather information (temperature, weather description, humidity, etc.).
 - Retrieving and displaying a weather forecast for a specific date, including average temperature and humidity.
