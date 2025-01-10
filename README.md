@@ -48,6 +48,14 @@ The following libraries are used:
 - **`email.mime.multipart`**: Used to create multipart email message to be sent to the user--containing both plain text and attachments. 
 - **`smtplib`**: Used to connect to an SMTP server and send email messages.
 
+### Installation
+Clone this repository to your local machine:
+
+```markdown
+git clone https://github.com/code50/191282522.git
+cd Project
+```
+
 ### Usage
 
 After completing the setup steps, you can run the project.py script to start interacting with the User Interface.
@@ -86,6 +94,8 @@ To run the tests, execute the following command:
 ```bash
 pytest test_project.py
 ```
+
+If you don't have pytest in your PC; you can install it using (pip install pytest)
 
 ### License
 
