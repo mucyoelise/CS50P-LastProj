@@ -22,7 +22,7 @@ Want to know more about Astrology [click here](https://docs.google.com/document/
 
 ## What Will Your Software Do?
 
-This software aims to provide users with their zodiac sign according to the provided date of birth. Moreover, the users should choose if they want to get their personalities based on their zodiac sign as well as to receive them on their email. Note the user will be required to provide his/her gmail account for the sake of getting this information on his/her email.
+This software aims to provide users with their zodiac sign according to the provided date of birth. Moreover, the users should choose if they want to get their personalities based on their zodiac sign as well as to receive them on their email. Note the user will be required to provide his/her gmail account for the sake of getting this information.
 
 ## How Will It Be Executed?
 
