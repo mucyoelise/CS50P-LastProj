@@ -14,10 +14,12 @@ class ZodiacSign:
     def __init__(self, dob):
         self.dob = dob
     
+    #Make dob property of class
     @property
     def dob(self):
         return self._dob
     
+    # Create dob setter
     @dob.setter
     def dob(self, n):
         try:
@@ -34,6 +36,7 @@ class ZodiacSign:
         ...Note that all the parts (year, month, and day) should be numbers...
                 \n''')
             raise()
+    
     def __repr__(self):
         return f'\nYour provided DoB is a valid format: "{self._dob}".\nWanna get your ZodiacSign use getZodSign() module.\n'
     
