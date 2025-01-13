@@ -1,6 +1,6 @@
 # ZodiacSign Project
 
-#### Video Demo: [VideoDemo](https://youtu.be/psu6Il8p3FA)
+#### Video Demo: [ClickHere!](https://youtu.be/psu6Il8p3FA)
 
 #### Description: This project is designed to help users know their zodiac sign according to their inputed date of birth.
 
