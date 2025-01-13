@@ -61,7 +61,7 @@ class ZodiacSign:
                 ZodiacSign.user_sign = "Scorpio"
         elif date(int(year), 11, 22)<=date(int(year),int(month),int(day))<= date(int(year),12,21):
                 ZodiacSign.user_sign = "Sagittarius"
-        elif date(int(year-1), 12, 22)<=date(int(year),int(month),int(day))<= date(int(year),1,19):
+        elif date(int(year)-1, 12, 22)<=date(int(year),int(month),int(day))<= date(int(year),1,19):
                 ZodiacSign.user_sign = "Capricorn"
         elif date(int(year), 1, 20)<=date(int(year),int(month),int(day))<= date(int(year),2,18):
                 ZodiacSign.user_sign = "Aquarius"
