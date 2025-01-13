@@ -18,7 +18,7 @@
 
 Have you heard zodiac sign before? Well, in the concept of Astrology: a belief system that suggests a relationship between the positions and movements of celestial bodies--like planets, stars and moon--and events on the Earth, including human personalities, behaviors, and life events; zodiac is the part of astrology which believes that a person's personality depends on the position and movements of celestial bodies at the time of their birth. The zodiac is divided into 12 signs, each corresponding to specific dates in the calendar year. These signs are derived from the constellations the sun appears to pass through as the Earth orbits around it.
 
-Want to know more about Astrology [click here](https://docs.google.com/document/d/1wB_t3Df-YiviWwG1Fy9tARbSY0cPbH1h/edit?usp=sharing&ouid=116133234786654777112&rtpof=true&sd=true).
+Want to know more about Astrology and Zodiac sign, click here: [Astrology/Zodiac_Docs](https://docs.google.com/document/d/1wB_t3Df-YiviWwG1Fy9tARbSY0cPbH1h/edit?usp=sharing&ouid=116133234786654777112&rtpof=true&sd=true).
 
 ## What Will Your Software Do?
 
@@ -36,13 +36,13 @@ This project utilizes several Python libraries to manage the application (in gen
 
 The following libraries are used:
 
-- **`datetime`**: Used to compute the range of zodiac signs with the user's provided date of birth.
-- **`pyfiglet`**: to install use (pip install pyfiglet).Used to create ASCII art from the text(ZODIAC APP).
+- **`datetime`**: Used to compute the range of zodiac signs' date with the user's provided date of birth.
+- **`pyfiglet`**: Used to create ASCII art from the text(ZODIAC APP). To install this library, use (pip install pyfiglet).
 - **`json`**: Used to read the json file contains personalities of different zodiac signs.
-- **`re`**: Used to check user's entered email if it is valid
+- **`re`**: Used to check user's entered email if it is valid.
 
 - **`os`**: Used to interact with the operating system, so as to access on environment variables and working with file paths.
-- **`dotenv`**: to install this use (pip install python-dotenv). Used to load .env file so as to read credentials of the sender.
+- **`dotenv`**: Used to load .env file so as to read credentials of the sender. To install this use (pip install python-dotenv).
 
 - **`email.mime.text`**: Used to create email messages with text content.
 - **`email.mime.multipart`**: Used to create multipart email message to be sent to the user--containing both plain text and attachments. 
@@ -55,6 +55,11 @@ Clone this repository to your local machine:
 git clone https://github.com/code50/191282522.git
 cd Project
 ```
+
+Libraries need to be installed before running:
+
+- **`pyfiglet`**: To install this library, use (pip install pyfiglet).
+- **`dotenv`**: To install this use (pip install python-dotenv).
 
 ### Usage
 
@@ -95,7 +100,9 @@ To run the tests, execute the following command:
 pytest test_project.py
 ```
 
-If you don't have pytest in your PC; you can install it using (pip install pytest)
+Note you will need to install this--if you don't have--before testing:
+
+- **`pytest`**: install it using (pip install pytest).
 
 ### License
 
