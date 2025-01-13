@@ -1,6 +1,6 @@
 # ZodiacSign Project
 
-#### Video Demo: .....................
+#### Video Demo: [VideoDemo](https://youtu.be/psu6Il8p3FA)
 
 #### Description: This project is designed to help users know their zodiac sign according to their inputed date of birth.
 
@@ -75,7 +75,6 @@ The project structure is as follows:
   - project.py
   - personalities.json
   - .env
-  - requirements.txt
   - test_project.py
   - gitignore
 ```
